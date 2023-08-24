@@ -1,0 +1,225 @@
+/* Original styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.firstpage {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: #f4f4f4;
+}
+
+#imge {
+    height: 50px;
+}
+
+.firstpage ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.firstpage li {
+    cursor: pointer;
+}
+
+#bt {
+    background-color: #6424f9;
+    color: #f4f4f4;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.secpage {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color:#f4f4f4;
+}
+
+.sone {
+    flex: 1;
+}
+
+.stwo img {
+    max-width: 100%;
+}
+
+.para {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.p1 {
+    margin-top: 20px;
+    color: #888888;
+}
+
+.btp {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.btn1, .btn2 {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn1 {
+    background-color: #6424f9;
+    color: #ffffff;
+}
+
+.btn2 {
+    border: 2px solid #6424f9;
+    color: #6424f9;
+}
+
+.tpage {
+    padding: 50px;
+    text-align: center;
+}
+
+.t13, .con21 {
+    margin-bottom: 30px;
+}
+
+/* Additional styles for flipping animations and images */
+
+.tag1, .tag2 {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.tt1, .tt2, .tt3, .tt4 {
+    perspective: 1000px;
+    width: calc(50% - 10px);
+}
+
+.flip-container {
+    cursor: pointer;
+    width: 100%;
+    height: 250px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);   /* Added shadow */
+    border-radius: 10px;   /* Rounded edges */
+    margin-bottom: 20px; 
+}
+
+.flip-container:hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flipper {
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.tt1 .front {
+    background: url('webpage.jpg') center/cover no-repeat !important;
+}
+
+.tt2 .front {
+    background: url('startups.jpg') center/cover no-repeat !important;
+}
+
+.tt3 .front {
+    background: url('i8.png') center/cover no-repeat !important;
+}
+
+.tt4 .front {
+    background: url('bg_img1.jpg') center/cover no-repeat !important;
+}
+
+.back {
+    transform: rotateY(180deg);
+ 
+}
+
+.c1 , .c2 , .c3 , .c4 , .c5 , .c6 , .c7 , .c8 {
+    margin-top: 10%;
+    text-align: center;
+}
+
+.reviews, .contact-us {
+    background-color: #f4f4f4;
+    padding: 50px;
+    text-align: center;
+}
+
+.reviews h2, .contact-us h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.testimonial span {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.contact-us form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.contact-us input, .contact-us textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.contact-us button {
+    padding: 10px 20px;
+    background-color: #6424f9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
